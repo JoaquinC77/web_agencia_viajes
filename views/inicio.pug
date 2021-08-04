@@ -1,0 +1,37 @@
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em Aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+
+        .row.mb-5
+            .col-md-6
+                p Pellentesque eget vulputate lectus. Nulla facilisi. Etiam augue lacus, aliquam eu consequat id, volutpat nec sem. Aenean ultrices arcu non lacus venenatis, efficitur vulputate mi cursus. Nam in laoreet ex, sed facilisis est. Donec pellentesque scelerisque lacus, vel ornare sapien tempor ut. Cras gravida faucibus felis. Aliquam id varius enim. Sed at mauris vel ipsum gravida finibus ac ac orci.
+                p Pellentesque eget vulputate lectus. Nulla facilisi. Etiam augue lacus, aliquam eu consequat id, volutpat nec sem. Aenean ultrices arcu non lacus venenatis, efficitur vulputate mi cursus.
+
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+            
+        include ./layout/bloque_viajes
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 13 de Agosto de 2021 - 25 de Agosto de 2021
+                        p.precio $ 50000 CLP
+    
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
+
+        
+        
+        
